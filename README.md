@@ -1,6 +1,6 @@
 # Singapore family trip
 
-A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0, 1 and 2 are ready; later days will be planned incrementally. Day 1 opens by default, and `#day0` / `#day1` / `#day2` links select a day. Section deep links select their containing day.
+A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0–3 are ready; later days will be planned incrementally. Day 1 opens by default, and `#day0` / `#day1` / `#day2` / `#day3` links select a day. Section deep links select their containing day.
 
 ## Privacy
 
@@ -23,3 +23,5 @@ There is no build step. GitHub Pages publishes the root of the `main` branch. Pr
 Day 2 (20 September) follows the saved Gardens day, updated against official sources on 17 September: direct Rochor–Bayfront MRT, the Sun Pavilion entrance and age-appropriate toddler water play, optional wetlands, lunch, Cloud Forest/Jurassic World and Flower Dome, breaks, South Asian dinner, Mid-Autumn lanterns and 7:45pm Garden Rhapsody. Marina Barrage is optional rather than a required detour. Rain and tired-child alternatives, a checklist, ticket status and a complete Maps directory are included. No attraction purchase was made. Do not infer a booking from a suggested ticket or timetable.
 
 Flight times and baggage are from the booked ticket, not live airline data. Reconfirm before travel. Carry original passports and printed visas; this website does not replace travel documents.
+
+Day 3 (21 September) uses the confirmed Zoo 8:30am ticket and Bird Paradise 9am–5pm entry window. Taxi is the recommended morning transfer; the Khatib shuttle starts too late for that Zoo slot. An early MRT + bus 138 alternative is included. The plan includes one presentation per park, lunch and rest, free M1 inter-park travel, separate in-park rides, return MRT instructions, Monday exhibit closures and a complete map directory. Private tickets were reviewed locally but are never copied into the repository. No ticket or taxi purchase was made.
