@@ -1,6 +1,6 @@
 # Singapore family trip
 
-A mobile-friendly, public itinerary hosted on GitHub Pages. Day 0 is ready; later days will be planned incrementally.
+A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0 and 1 are ready; later days will be planned incrementally. Day 1 opens by default, and `#day0` / `#day1` links select a day.
 
 ## Privacy
 
@@ -14,7 +14,9 @@ The `noindex` metadata discourages search-engine indexing but does not make the 
 
 - `index.html`: itinerary and flight information.
 - `styles.css`: responsive layout and print styling.
-- `app.js`: local checklist, day notices and external document links.
+- `app.js`: local checklist, day navigation, one-tap Google Maps URLs and external document links.
+
+Day 1 includes the one-change airport MRT route via Expo, a two-change alternative, child travel-card guidance, hotel rest, a Marina Bay evening and a shorter-night option. The glowing sandpit's exact switch-on time is not confirmed; 7:30pm is a proposed visit time. Estimated journey times are not live directions. Official source links are included under the Day 1 review notes.
 
 There is no build step. GitHub Pages publishes the root of the `main` branch. Preserve `.nojekyll`. Use an explicit file allowlist when committing. Do not copy in a full local travel folder.
 
