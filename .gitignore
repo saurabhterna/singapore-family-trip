@@ -1,0 +1,14 @@
+# Personal documents must never enter this repository.
+*.pdf
+*.PDF
+*.png
+*.jpg
+*.jpeg
+*.zip
+*.docx
+documents/
+private/
+.env*
+.DS_Store
+node_modules/
+test-results/
