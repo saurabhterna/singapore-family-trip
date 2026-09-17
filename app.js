@@ -36,6 +36,30 @@ document.querySelectorAll('[data-map-to], [data-map-place]').forEach(link=>{
   else{p.set('origin',link.dataset.mapFrom);p.set('destination',link.dataset.mapTo);p.set('travelmode',link.dataset.mapMode||'walking');if(link.dataset.mapVia)p.set('waypoints',link.dataset.mapVia);link.href='https://www.google.com/maps/dir/?'+p;}
   link.target='_blank';link.rel='noopener noreferrer';
 });
+// Keep the map directory in sync with the selected evening, reusing verified links.
+const originalMaps=document.querySelector('#day1-maps .map-directory');
+originalMaps.id='maps-merlion';
+const alternativeMaps=document.createElement('div');
+alternativeMaps.id='maps-playground';alternativeMaps.className='map-directory';alternativeMaps.hidden=true;
+const alternativeLinks=[...Array.from(originalMaps.children).slice(0,3),...document.querySelectorAll('#route-playground [data-map-to], #route-playground [data-map-place]')];
+alternativeLinks.forEach((link,index)=>{
+  const copy=link.cloneNode(true);copy.className='';
+  copy.textContent=String(index+1).padStart(2,'0')+' · '+link.textContent.replace(/^\d+ · /,'');
+  alternativeMaps.append(copy);
+});
+originalMaps.after(alternativeMaps);
+const mapRouteLabel=document.createElement('p');mapRouteLabel.className='small-note';mapRouteLabel.id='map-route-label';
+originalMaps.before(mapRouteLabel);
+function showEvening(route){
+  if(!['merlion','playground'].includes(route))return;
+  document.querySelectorAll('[data-evening]').forEach(button=>{
+    const selected=button.dataset.evening===route;
+    button.setAttribute('aria-selected',String(selected));button.tabIndex=selected?0:-1;
+    document.querySelector('#route-'+button.dataset.evening).hidden=!selected;
+    document.querySelector('#maps-'+button.dataset.evening).hidden=!selected;
+  });
+  mapRouteLabel.textContent='Showing airport, hotel and '+(route==='playground'?'Playground first':'Merlion first')+' route links.';
+}
 function showDay(id){
   if(!['day0','day1'].includes(id))return;
   document.querySelectorAll('.day-content').forEach(el=>{el.hidden=el.id!==id;});
@@ -43,6 +67,31 @@ function showDay(id){
   document.querySelector('#notice').hidden=true;
 }
 document.querySelectorAll('[data-day]').forEach(link=>link.addEventListener('click',()=>showDay(link.dataset.day)));
-window.addEventListener('hashchange',()=>showDay(location.hash.slice(1)));
-showDay(location.hash==='#day0'?'day0':'day1');
+function followHash(){
+  const id=location.hash.slice(1);
+  if(id==='day1-playground'||id==='day1-merlion'){
+    showDay('day1');showEvening(id.slice(5));
+    document.querySelector('#evening-plan').scrollIntoView({block:'start'});
+  }else if(id==='easy-evening'){
+    showDay('day1');showEvening('merlion');document.querySelector('#easy-evening').scrollIntoView({block:'start'});
+  }else{
+    const target=document.getElementById(id);
+    if(target?.closest('#day1'))showDay('day1');else showDay(id);
+  }
+}
+const eveningTabs=Array.from(document.querySelectorAll('[data-evening]'));
+eveningTabs.forEach((button,index)=>{
+  button.addEventListener('click',()=>{
+    showEvening(button.dataset.evening);location.hash='day1-'+button.dataset.evening;
+  });
+  button.addEventListener('keydown',event=>{
+    let next;
+    if(event.key==='ArrowRight')next=(index+1)%eveningTabs.length;
+    else if(event.key==='ArrowLeft')next=(index+eveningTabs.length-1)%eveningTabs.length;
+    else if(event.key==='Home')next=0;else if(event.key==='End')next=eveningTabs.length-1;else return;
+    event.preventDefault();eveningTabs[next].focus();eveningTabs[next].click();
+  });
+});
+window.addEventListener('hashchange',followHash);
+showEvening('merlion');showDay(location.hash==='#day0'?'day0':'day1');followHash();
 document.querySelector('#print').addEventListener('click',()=>window.print());

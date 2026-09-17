@@ -16,7 +16,7 @@ The `noindex` metadata discourages search-engine indexing but does not make the 
 - `styles.css`: responsive layout and print styling.
 - `app.js`: local checklist, day navigation, one-tap Google Maps URLs and external document links.
 
-Day 1 includes the one-change airport MRT route via Expo, a two-change alternative, child travel-card guidance, hotel rest, a Marina Bay evening and a shorter-night option. The glowing sandpit's exact switch-on time is not confirmed; 7:30pm is a proposed visit time. Estimated journey times are not live directions. Official source links are included under the Day 1 review notes.
+Day 1 includes the one-change airport MRT route via Expo, a two-change alternative, child travel-card guidance and hotel rest. Two accessible evening tabs preserve the original Merlion-first route (`#day1-merlion`) and add a playground-first alternative (`#day1-playground`): PropNex, the bay loop to Merlion, Indian dinner and 9pm Spectra. Each has a tired-child fallback. The all-maps directory follows the selected tab. The alternative visits PropNex in daylight, without promising glowing sand; the original proposes 7:30pm, but exact illumination start time is unconfirmed. Estimated journey times are not live directions. Official source links are included under the Day 1 review notes.
 
 There is no build step. GitHub Pages publishes the root of the `main` branch. Preserve `.nojekyll`. Use an explicit file allowlist when committing. Do not copy in a full local travel folder.
 
