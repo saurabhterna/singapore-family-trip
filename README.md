@@ -1,6 +1,6 @@
 # Singapore family trip
 
-A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0–4 are ready; later days will be planned incrementally. Day 1 opens by default, and `#day0` / `#day1` / `#day2` / `#day3` / `#day4` links select a day. Section deep links select their containing day.
+A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0–5 are ready; the last day will be planned next. Day 1 opens by default, and `#day0` / `#day1` / `#day2` / `#day3` / `#day4` / `#day5` links select a day. Section deep links select their containing day.
 
 ## Privacy
 
@@ -11,6 +11,8 @@ Document buttons are placeholders until restricted Google Drive links are suppli
 The `noindex` metadata discourages search-engine indexing but does not make the website private. The checklist is saved in the visitor's own browser; it is not synchronised or sent to a server.
 
 ## Editing
+
+Day 5 (23 September) is a relaxed birthday plan: direct Rochor–Botanic Gardens MRT, Jacob Ballas play and water play (Tree House closed), Small Batch lunch, taxi to a proposed 2pm Museum of Ice Cream slot, hotel rest, Indian dinner and a small pre-arranged celebration. Includes public-transport alternatives, rain/low-energy fallback, an optional Orchid Garden substitution, ticket status and one-tap Maps. Museum admission, dinner and cake are suggestions, not confirmed bookings. Operator hours and closures were checked on 17 September 2026; no private documents were uploaded.
 
 - `index.html`: itinerary and flight information.
 - `styles.css`: responsive layout and print styling.
