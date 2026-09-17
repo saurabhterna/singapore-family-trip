@@ -29,7 +29,6 @@ for(const doc of documents){
 }
 if(documents.every(d=>d.url&&isDriveUrl(d.url)))document.querySelector('#doc-status').textContent='FILES IN RESTRICTED DRIVE';
 document.querySelectorAll('[data-check]').forEach(input=>{try{input.checked=localStorage.getItem('sg-trip-'+input.dataset.check)==='yes';}catch{}input.addEventListener('change',()=>{try{localStorage.setItem('sg-trip-'+input.dataset.check,input.checked?'yes':'no');}catch{}});});
-document.querySelectorAll('[data-future]').forEach(button=>button.addEventListener('click',()=>{const notice=document.querySelector('#notice');notice.hidden=false;notice.textContent=button.dataset.future+' will be added after we plan it together. Days 0–5 are ready.';}));
 document.querySelectorAll('[data-map-to], [data-map-place]').forEach(link=>{
   const p=new URLSearchParams({api:'1'});
   if(link.dataset.mapPlace){p.set('query',link.dataset.mapPlace);link.href='https://www.google.com/maps/search/?'+p;}
@@ -37,7 +36,7 @@ document.querySelectorAll('[data-map-to], [data-map-place]').forEach(link=>{
   link.target='_blank';link.rel='noopener noreferrer';
 });
 // Reuse each detailed itinerary's links in its all-maps directory.
-['day2','day3','day4','day5'].forEach(day=>{
+['day2','day3','day4','day5','day6'].forEach(day=>{
   document.querySelectorAll('#'+day+' [data-map-to], #'+day+' [data-map-place]').forEach((link,index)=>{
     const copy=link.cloneNode(true);copy.className='';
     copy.textContent=String(index+1).padStart(2,'0')+' · '+link.textContent;
@@ -69,7 +68,7 @@ function showEvening(route){
   mapRouteLabel.textContent='Showing airport, hotel and '+(route==='playground'?'Playground first':'Merlion first')+' route links.';
 }
 function showDay(id){
-  if(!['day0','day1','day2','day3','day4','day5'].includes(id))return;
+  if(!['day0','day1','day2','day3','day4','day5','day6'].includes(id))return;
   document.querySelectorAll('.day-content').forEach(el=>{el.hidden=el.id!==id;});
   document.querySelectorAll('[data-day]').forEach(el=>{const active=el.dataset.day===id;el.classList.toggle('active',active);if(active)el.setAttribute('aria-current','page');else el.removeAttribute('aria-current');});
   document.querySelector('#notice').hidden=true;

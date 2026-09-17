@@ -1,6 +1,6 @@
 # Singapore family trip
 
-A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0–5 are ready; the last day will be planned next. Day 1 opens by default, and `#day0` / `#day1` / `#day2` / `#day3` / `#day4` / `#day5` links select a day. Section deep links select their containing day.
+A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0–6 are ready. Day 1 opens by default, and `#day0` through `#day6` links select a day. Section deep links select their containing day. Suggested activities and ticket links do not imply confirmed bookings.
 
 ## Privacy
 
@@ -11,6 +11,8 @@ Document buttons are placeholders until restricted Google Drive links are suppli
 The `noindex` metadata discourages search-engine indexing but does not make the website private. The checklist is saved in the visitor's own browser; it is not synchronised or sent to a server.
 
 ## Editing
+
+Day 6 (24 September) preserves the 9:30am Future World booking, uses early hotel checkout with luggage storage, lunch at Marina Bay Sands, luggage collection and an airport transfer targeting 3:45pm. The return ticket was reviewed locally: IndiGo 6E-1164, SIN T2 19:45 SGT to BOM T2 22:45 IST. Airport MRT via Expo and taxi options are included, with a Thane homeward leg. Aerial Climbing requires 1.20m; the child's personal measurement is not published. Flight status, counters, gates and any schedule changes must be rechecked. Private source PDFs are not in the repository.
 
 Day 5 (23 September) is a relaxed birthday plan: direct Rochor–Botanic Gardens MRT, Jacob Ballas play and water play (Tree House closed), Small Batch lunch, taxi to a proposed 2pm Museum of Ice Cream slot, hotel rest, Indian dinner and a small pre-arranged celebration. Includes public-transport alternatives, rain/low-energy fallback, an optional Orchid Garden substitution, ticket status and one-tap Maps. Museum admission, dinner and cake are suggestions, not confirmed bookings. Operator hours and closures were checked on 17 September 2026; no private documents were uploaded.
 
