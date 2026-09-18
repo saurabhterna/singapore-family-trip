@@ -12,6 +12,8 @@ The `noindex` metadata discourages search-engine indexing but does not make the 
 
 ## Editing
 
+The `#photo-prompts` section contains six general-purpose travel-photo editing prompts with accessible copy buttons and a manual-selection fallback. Each copied prompt includes identity-preservation and honest-export instructions. It does not upload photos, call editing services, or assume a subscription includes image editing. This section is omitted from itinerary printing.
+
 18 September update: optional free-event collection at `#free-extras`, with day-specific options at `#day2-free` and `#day4-free`. These preserve the main schedule and can be skipped: Mid-Autumn lanterns/Garden Rhapsody, Borealis, SCCC bunny inflatables and weekend crafts, Jurong Lake Gardens lanterns/Rockestra, Sensoryscape and existing free playgrounds. Operator links, Maps, date exceptions, paid-extra warnings and tired-child fallbacks are included. Gardens and Oceanarium booking labels now reflect the privately reviewed issued tickets; no ticket files, codes, references or payment details were added. This update supersedes the earlier unconfirmed-ticket notes below for those two attractions only.
 
 Day 6 (24 September) preserves the 9:30am Future World booking, uses early hotel checkout with luggage storage, lunch at Marina Bay Sands, luggage collection and an airport transfer targeting 3:45pm. The return ticket was reviewed locally: IndiGo 6E-1164, SIN T2 19:45 SGT to BOM T2 22:45 IST. Airport MRT via Expo and taxi options are included, with a Thane homeward leg. Aerial Climbing requires 1.20m; the child's personal measurement is not published. Flight status, counters, gates and any schedule changes must be rechecked. Private source PDFs are not in the repository.

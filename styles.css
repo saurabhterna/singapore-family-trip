@@ -21,6 +21,16 @@
 .jump-links a{font-size:12px;text-decoration:none;padding:9px 13px;border:1px solid #bbc7b9;border-radius:24px;background:#edf0e6}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .travel-panel{margin:24px 0}
+#photo-prompts h2{font-size:34px;line-height:1.2}
+.prompt-card{min-width:0}
+.photo-prompt-text{display:block;width:100%;resize:vertical;min-height:220px;margin:10px 0 14px;padding:14px;border:1px solid #b5c5bb;border-radius:8px;background:#f6f7f0;color:var(--ink);font:13px/1.65 Arial,Helvetica,sans-serif}
+.photo-prompt-text:focus-visible{outline:3px solid var(--orange);outline-offset:2px}
+.prompt-actions{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.copy-prompt{background:var(--ink);color:white;border:0;cursor:pointer}
+.copy-prompt:disabled{opacity:.65;cursor:wait}
+.prompt-copy-status{flex:1;min-width:140px}
+@media(max-width:560px){#photo-prompts h2{font-size:28px}.photo-prompt-text{font-size:16px;min-height:270px}}
+@media print{#photo-prompts{display:none!important}}
 .documents .doc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 .documents .section-title{flex-wrap:wrap}
 .documents .view-highlight p{font-size:13px}

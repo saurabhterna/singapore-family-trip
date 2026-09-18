@@ -99,3 +99,20 @@ eveningTabs.forEach((button,index)=>{
 window.addEventListener('hashchange',followHash);
 showEvening('merlion');showDay(location.hash==='#day0'?'day0':'day1');followHash();
 document.querySelector('#print').addEventListener('click',()=>window.print());
+
+// Copy only the selected prompt, never photos or private document content.
+document.querySelectorAll('[data-copy-prompt]').forEach(button=>{
+  button.addEventListener('click',async()=>{
+    const field=document.getElementById(button.dataset.copyPrompt);
+    const status=button.parentElement.querySelector('.prompt-copy-status');
+    button.disabled=true;
+    try{
+      if(!navigator.clipboard?.writeText)throw new Error('Clipboard unavailable');
+      await navigator.clipboard.writeText(field.value);
+      status.textContent='Copied—paste with your photo.';
+    }catch{
+      field.focus();field.select();field.setSelectionRange(0,field.value.length);
+      status.textContent='Text selected. Use Copy, then paste in your editor.';
+    }finally{button.disabled=false;}
+  });
+});
