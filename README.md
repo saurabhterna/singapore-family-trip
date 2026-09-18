@@ -12,7 +12,7 @@ The `noindex` metadata discourages search-engine indexing but does not make the 
 
 ## Editing
 
-The `#photo-prompts` section contains six general-purpose travel-photo editing prompts with accessible copy buttons and a manual-selection fallback. Each copied prompt includes identity-preservation and honest-export instructions. It does not upload photos, call editing services, or assume a subscription includes image editing. This section is omitted from itinerary printing.
+The `#photo-prompts` section contains six detailed, general-purpose travel-photo editing briefs with accessible copy buttons and a manual-selection fallback. Updated 18 September: each copied prompt covers composition, selective lighting, believable depth, colour/detail, identity preservation and honest export. Night, portrait, sunlight, landmark and restoration workflows have distinct guidance rather than one repeated filter recipe. It does not upload photos, call editing services, or assume a subscription includes image editing. This section is omitted from itinerary printing.
 
 18 September update: optional free-event collection at `#free-extras`, with day-specific options at `#day2-free` and `#day4-free`. These preserve the main schedule and can be skipped: Mid-Autumn lanterns/Garden Rhapsody, Borealis, SCCC bunny inflatables and weekend crafts, Jurong Lake Gardens lanterns/Rockestra, Sensoryscape and existing free playgrounds. Operator links, Maps, date exceptions, paid-extra warnings and tired-child fallbacks are included. Gardens and Oceanarium booking labels now reflect the privately reviewed issued tickets; no ticket files, codes, references or payment details were added. This update supersedes the earlier unconfirmed-ticket notes below for those two attractions only.
 
