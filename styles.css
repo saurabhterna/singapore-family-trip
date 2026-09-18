@@ -21,6 +21,10 @@
 .jump-links a{font-size:12px;text-decoration:none;padding:9px 13px;border:1px solid #bbc7b9;border-radius:24px;background:#edf0e6}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .travel-panel{margin:24px 0}
+.documents .doc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.documents .section-title{flex-wrap:wrap}
+.documents .view-highlight p{font-size:13px}
+@media(max-width:560px){.documents .doc-grid{grid-template-columns:1fr}.documents h2{font-size:29px}}
 .view-highlight{margin:18px 0;padding:16px 18px;background:#fff3d6;border-left:4px solid #c78018;border-radius:0 9px 9px 0;break-inside:avoid}
 .view-highlight h4{font-family:inherit;font-size:12px;letter-spacing:.04em;line-height:1.5;margin:0 0 8px;color:#684005}
 .view-highlight p{margin:0!important;color:#493c28!important;line-height:1.7}

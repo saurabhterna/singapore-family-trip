@@ -6,7 +6,7 @@ A mobile-friendly, public itinerary hosted on GitHub Pages. Days 0–6 are ready
 
 This repository and website are public. They contain no PDF documents, passports, visas, QR codes, booking references, contact information or payment details.
 
-Document buttons are placeholders until restricted Google Drive links are supplied and verified. Documents must remain in Google Drive with **General access: Restricted**, shared only with intended accounts. Links themselves do not provide access. Never upload documents to this repository or its Pages build.
+The two document buttons open combined Travel Documents and Attraction Tickets PDFs in Google Drive; a third link opens their containing folder. General access was checked as **Restricted** for both PDFs and the folder on 18 September 2026, with only the owner listed. No sharing permissions were changed. The URLs are visible in this public repository, but Google Drive enforces document access. Keep General access Restricted and share only with intended accounts. Never upload documents to this repository or its Pages build. Open each PDF on the travel phone while signed into an authorised account and save it offline before departure.
 
 The `noindex` metadata discourages search-engine indexing but does not make the website private. The checklist is saved in the visitor's own browser; it is not synchronised or sent to a server.
 

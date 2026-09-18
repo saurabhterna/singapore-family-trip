@@ -3,12 +3,8 @@
 // passport/visa numbers, booking codes, contact details or local file paths.
 // Verify Drive's General access is Restricted before adding any URL.
 const documents = [
-  { title:'Flight tickets', note:'Outbound and return tickets for all travellers.', url:null },
-  { title:'Singapore e-visas', note:'E-visas will stay in restricted Google Drive storage, not on this website.', url:null },
-  { title:'Attraction tickets', note:'Zoo, Bird Paradise and other booked activities. Keep QR codes private.', url:null },
-  { title:'SG Arrival Cards', note:'Acknowledgements for all three travellers. These are not visas.', url:null },
-  { title:'Hotel confirmation', note:'Your accommodation booking and any updated confirmation.', url:null },
-  { title:'Travel insurance', note:'Policy and emergency assistance details, available only to authorised viewers.', url:null }
+  { title:'Travel documents · combined PDF', note:'Your private travel pack: identity and entry documents, flight tickets, hotel confirmation and insurance. Carry original passports and retain original signed files.', url:'https://drive.google.com/file/d/1pDryMbnA_TbnEON3OJImiH8CkmaE0nzJ/view' },
+  { title:'Attraction tickets · combined PDF', note:'Your private attraction ticket pack. Use the PDF contents / bookmarks to find a ticket. Keep any later reservations and newly issued tickets alongside this pack.', url:'https://drive.google.com/file/d/1OLDyfvAx5TM4Siu0QyqG-Pfan-BkYGzq/view' }
 ];
 function isDriveUrl(value) {
   try { const u=new URL(value);return u.protocol==='https:'&&u.hostname==='drive.google.com'&&!u.username&&!u.password; } catch { return false; }
