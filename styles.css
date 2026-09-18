@@ -21,6 +21,13 @@
 .jump-links a{font-size:12px;text-decoration:none;padding:9px 13px;border:1px solid #bbc7b9;border-radius:24px;background:#edf0e6}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .travel-panel{margin:24px 0}
+.view-highlight{margin:18px 0;padding:16px 18px;background:#fff3d6;border-left:4px solid #c78018;border-radius:0 9px 9px 0;break-inside:avoid}
+.view-highlight h4{font-family:inherit;font-size:12px;letter-spacing:.04em;line-height:1.5;margin:0 0 8px;color:#684005}
+.view-highlight p{margin:0!important;color:#493c28!important;line-height:1.7}
+.view-highlight .text-link{display:inline-block;margin-top:10px}
+#neighbourhood-extras h2,#photo-guide h2{font-size:32px;line-height:1.2}
+#neighbourhood-extras .panel,#photo-guide .panel{min-width:0}
+@media(max-width:560px){#neighbourhood-extras h2,#photo-guide h2{font-size:27px}.view-highlight{padding:14px}}
 .travel-panel .eyebrow{margin-bottom:10px}
 .travel-panel p,.info-grid p{font-size:13px;color:var(--muted);line-height:1.7}
 .travel-panel .lead{font-size:14px;max-width:920px}
